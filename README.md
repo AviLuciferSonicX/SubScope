@@ -21,24 +21,76 @@ stay small and the engine stays predictable.
 - Zero required third-party Python packages
 - Optional `SECURITYTRAILS_API_KEY` support
 
-## Quick Start
+## Requirements
+
+- Python 3.10 or newer
+- Git for downloading with `git clone`
+- Internet access for passive sources
+- DNS/network access when using `--resolve`
+
+SubScope uses only Python standard-library modules, so no external package
+installation is required.
+
+## Download, Installation, and Execution
+
+### Windows
 
 ```powershell
+# Download
 git clone <repository-url>
 cd SubScope
-python .\subscope.py -d example.com
+
+# Check Python version
+py -3 --version
+
+# Run passive enumeration
+py -3 .\subscope.py -d example.com
+
+# Run with DNS validation and wildcard filtering
+py -3 .\subscope.py -d example.com --resolve
+
+# Save JSONL output
+py -3 .\subscope.py -d example.com --resolve --json -o results.jsonl
 ```
 
-With DNS validation:
+### Linux
 
-```powershell
-python .\subscope.py -d example.com --resolve
+```bash
+# Download
+git clone <repository-url>
+cd SubScope
+
+# Check Python version
+python3 --version
+
+# Run passive enumeration
+python3 subscope.py -d example.com
+
+# Run with DNS validation and wildcard filtering
+python3 subscope.py -d example.com --resolve
+
+# Save JSONL output
+python3 subscope.py -d example.com --resolve --json -o results.jsonl
 ```
 
-JSONL output:
+### macOS
 
-```powershell
-python .\subscope.py -d example.com --resolve --json -o results.jsonl
+```bash
+# Download
+git clone <repository-url>
+cd SubScope
+
+# Check Python version
+python3 --version
+
+# Run passive enumeration
+python3 subscope.py -d example.com
+
+# Run with DNS validation and wildcard filtering
+python3 subscope.py -d example.com --resolve
+
+# Save JSONL output
+python3 subscope.py -d example.com --resolve --json -o results.jsonl
 ```
 
 ## Notes
