@@ -25,19 +25,19 @@ stay small and the engine stays predictable.
 
 ```powershell
 cd "C:\Users\Lucifer\Documents\Sub Domain Enumeration\subscope"
-C:\Users\Lucifer\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe .\run_subscope.py -d example.com
+C:\Users\Lucifer\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe .\subscope.py -d example.com
 ```
 
 With DNS validation:
 
 ```powershell
-C:\Users\Lucifer\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe .\run_subscope.py -d example.com --resolve
+C:\Users\Lucifer\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe .\subscope.py -d example.com --resolve
 ```
 
 JSONL output:
 
 ```powershell
-C:\Users\Lucifer\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe .\run_subscope.py -d example.com --resolve --json -o results.jsonl
+C:\Users\Lucifer\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe .\subscope.py -d example.com --resolve --json -o results.jsonl
 ```
 
 ## Notes
