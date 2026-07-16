@@ -24,20 +24,21 @@ stay small and the engine stays predictable.
 ## Quick Start
 
 ```powershell
-cd "C:\Users\Lucifer\Documents\Sub Domain Enumeration\subscope"
-C:\Users\Lucifer\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe .\subscope.py -d example.com
+git clone <repository-url>
+cd SubScope
+python .\subscope.py -d example.com
 ```
 
 With DNS validation:
 
 ```powershell
-C:\Users\Lucifer\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe .\subscope.py -d example.com --resolve
+python .\subscope.py -d example.com --resolve
 ```
 
 JSONL output:
 
 ```powershell
-C:\Users\Lucifer\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe .\subscope.py -d example.com --resolve --json -o results.jsonl
+python .\subscope.py -d example.com --resolve --json -o results.jsonl
 ```
 
 ## Notes
