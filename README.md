@@ -1,10 +1,13 @@
-# subscope
+# SubScope
 
-`subscope` is a fast passive subdomain enumeration tool with optional DNS
-validation and wildcard filtering. It is designed for authorized asset
-discovery, bug bounty reconnaissance, and internal security inventory work.
+Fast, cross-platform subdomain enumeration tool with async passive sources,
+strict normalization, source attribution, confidence scoring, and optional DNS
+validation with wildcard filtering.
 
-Compared with older scraper-heavy tools, `subscope` centralizes normalization,
+`SubScope` is designed for authorized asset discovery, bug bounty
+reconnaissance, and internal security inventory work.
+
+Compared with older scraper-heavy tools, SubScope centralizes normalization,
 deduplication, source attribution, timeout handling, and DNS validation. Sources
 stay small and the engine stays predictable.
 
