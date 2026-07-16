@@ -4,9 +4,9 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
-from subscope.engine import Enumerator
-from subscope.models import Candidate
-from subscope.sources import Source
+from engine import Enumerator
+from models import Candidate
+from sources import Source
 
 
 class StaticSource(Source):

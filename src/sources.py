@@ -4,9 +4,9 @@ import os
 from abc import ABC, abstractmethod
 from urllib.parse import quote, urlparse
 
-from .http import HTTPClient
-from .models import Candidate
-from .normalize import extract_hosts, normalize_domain
+from http_client import HTTPClient
+from models import Candidate
+from normalize import extract_hosts, normalize_domain
 
 
 class Source(ABC):

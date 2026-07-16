@@ -3,7 +3,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
-from subscope.normalize import extract_hosts, in_scope, normalize_domain
+from normalize import extract_hosts, in_scope, normalize_domain
 
 
 class NormalizeTests(unittest.TestCase):

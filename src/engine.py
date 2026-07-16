@@ -3,11 +3,11 @@ from __future__ import annotations
 import asyncio
 from collections.abc import Iterable
 
-from .http import HTTPClient
-from .models import Candidate, Finding
-from .normalize import in_scope, normalize_domain
-from .resolver import DNSResolver
-from .sources import DEFAULT_SOURCES, Source
+from http_client import HTTPClient
+from models import Candidate, Finding
+from normalize import in_scope, normalize_domain
+from resolver import DNSResolver
+from sources import DEFAULT_SOURCES, Source
 
 
 class Enumerator:

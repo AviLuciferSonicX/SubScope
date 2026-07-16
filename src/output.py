@@ -4,7 +4,7 @@ import json
 from collections.abc import Iterable
 from typing import TextIO
 
-from .models import Finding
+from models import Finding
 
 
 def write_text(findings: Iterable[Finding], stream: TextIO) -> None:

@@ -4,10 +4,10 @@ import argparse
 import asyncio
 import sys
 
-from .engine import Enumerator
-from .normalize import normalize_domain
-from .output import write_jsonl, write_text
-from .sources import DEFAULT_SOURCES
+from engine import Enumerator
+from normalize import normalize_domain
+from output import write_jsonl, write_text
+from sources import DEFAULT_SOURCES
 
 
 def build_parser() -> argparse.ArgumentParser:

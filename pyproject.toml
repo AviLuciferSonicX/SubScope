@@ -13,7 +13,8 @@ license = { text = "MIT" }
 dependencies = []
 
 [project.scripts]
-subscope = "subscope.cli:main"
+subscope = "cli:main"
 
-[tool.setuptools.packages.find]
-where = ["src"]
+[tool.setuptools]
+package-dir = {"" = "src"}
+py-modules = ["cli", "engine", "http_client", "models", "normalize", "output", "resolver", "sources"]
